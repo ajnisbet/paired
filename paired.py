@@ -4,19 +4,18 @@ import itertools
 __version__ = '0.0.1'
 
 
-def _empty_2d_array(shape, initial_value=0):
+def _empty_2d_array(shape):
     '''
-    Return a (list of rows) array of given shape, filled with some value.
+    Return a (list of rows) array of given shape, filled with zeros.
 
     Args:
         shape (tuple): A (n_rows, n_cols) tuple.
-        initial_value: The same value will be used in all cells.
 
     Returns:
         a (list): Array of given shape filled with the same value. Can index with z[row][col].
     '''
     n_rows, n_cols = shape[0], shape[1]
-    a = [[initial_value for _ in range(n_cols)] for _ in range(n_rows)]
+    a = [[0 for _ in range(n_cols)] for _ in range(n_rows)]
     return a
 
 

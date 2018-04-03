@@ -2,7 +2,7 @@
 
 Paired is a Python package for pairwise alignment of arbitrary sequences. 
 
-Python has lots of great packages for sequence alignment and warping, but mostly for biological or numerical data. Paired performs global alignment on lists of arbitrary Python objects, and lets you define how element pairs are matched and scored.
+Python has lots of great packages for sequence alignment and time warping, but mostly for biological or numerical data. Paired performs global alignment on lists of arbitrary Python objects, and lets you define how element pairs are matched and scored.
 
 
 ## Basic usage
@@ -85,8 +85,18 @@ Arguments:
 * **match_score** (*numeric*): Score when matching elements are paired.
 * **mismatch_score** (*numeric*): Score when mismatching elements are paired.
 * **gap_score** (*numeric*): Score for an insertion/deletion, when an element is paired with no other element.
-* **scorer** (*callable*): Function that takes two elements as inputs, and returns a numerical score based on how well they match.  If `None` is passed, the default function used is equivalent to `lamdba a, b: match_score if a==b else mismatch_score`.
+* **scorer** (*callable*): Function that takes two elements as inputs, and returns a numerical score based on how well they match.  If `None` is passed, the default function used is equivalent to `lambda a, b: match_score if a==b else mismatch_score`.
 
 Returns: 
 
 * **alignment** (*list of tuples*): The aligned sequence, as a list of pairs of indices into `x` and `y` respectively.  A gap is represented by `None` instead of an integer index.
+
+
+## Running tests
+
+Tests can be run with [pytest][https://docs.pytest.org/en/latest/]:
+
+```shell
+cd paired/
+py.test
+```

@@ -8,6 +8,14 @@ build/
 dist/
 *.egg-info/
 
+# Unit test / coverage reports
+.coverage
+.coverage.*
+htmlcov/
+.cache
+coverage.xml
+.pytest_cache/
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
