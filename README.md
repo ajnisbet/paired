@@ -94,7 +94,7 @@ Returns:
 
 ## Running tests
 
-Tests can be run with [pytest][https://docs.pytest.org/en/latest/]:
+Tests can be run with [pytest](https://docs.pytest.org/en/latest/):
 
 ```shell
 cd paired/
