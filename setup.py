@@ -1,5 +1,5 @@
 from __future__ import with_statement
-from distutils.core import setup
+from setuptools import setup
 
 import paired
 
@@ -29,6 +29,7 @@ setup(
     tests_require=['pytest'],
     description='Sequence alignment of Python objects.',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     license='MIT',
     url='https://github.com/ajnisbet/paired',
     classifiers=classifiers,

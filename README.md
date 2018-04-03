@@ -36,7 +36,7 @@ for i_1, i_2 in alignment:
 
 ## Custom scores
 
-Paired uses the [Needleman–Wunsch algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm).  The scoring for the different operations (match, mismatch, gap) can be specified:
+Paired uses the [Needleman-Wunsch algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm).  The scoring for the different operations (match, mismatch, gap) can be specified:
 
 ```python
 alignment = paired.align(seq_1, seq_2, match_score=5, mismatch_score=-1, gap_score=-5)
@@ -66,7 +66,7 @@ alignment = paired.align(seq_1, seq_2, scorer=scorer, gap_score=-3)
 
 ## Installation
 
-Paired can be installed with pip. It has no dependencies.
+Paired is on [PyPI](https://pypi.org/project/paired/) and can be installed with pip. It has no dependencies.
 
 ```shell
 pip install paired
